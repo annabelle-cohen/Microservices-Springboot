@@ -28,6 +28,23 @@ the project comes to demonstrate the idea of microsevices by modules in spring b
 </ul>
 
 <hr/><br/>
+
+## Support in Docker Image:
+I also added option to run the microservices by Docker Images <br/>
+all you have to do is:<br/>
+<ul>
+<li>Docker - make sure that you have an account in Docker Hub</li>
+<li>go to docker-compose.yml - change in the image tag in each container from : annabellecode/fraud:latest to YOU_USERNAME_DOCKERHUB/fraud:latest</li>
+<li>Open CMD</li>
+<li>type: mvn clean package -P build-docker-image</li>
+<li>type: docker compose up -d</li>
+<li>activate each service: docker logs eureka-server, docker logs apigw, docker logs customer, docker logs fraud, docker logs notification</li>
+</ul>
+<br/> 
+that's it all the services is up and running.
+<hr/><br/>
+
+
 ## More Imporatant Things:
 
 Activate Docker: <br/>
